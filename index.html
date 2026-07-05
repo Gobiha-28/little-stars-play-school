@@ -69,6 +69,11 @@ data-bs-target="#menu">
 <li class="nav-item">
 <a class="nav-link" href="#contact">Contact</a>
 </li>
+<li class="nav-item ms-2">
+    <a class="btn btn-warning text-dark fw-bold px-3" href="login.html">
+        <i class="bi bi-box-arrow-in-right"></i> Login
+    </a>
+</li>
 
 </ul>
 
@@ -76,6 +81,7 @@ data-bs-target="#menu">
 
 </div>
 </nav>
+
 
 <!-- Hero Section -->
 
@@ -452,83 +458,6 @@ We provide the best learning environment for your child.
 
 <!-- ADMISSION -->
 
-<section id="admission" class="py-5 bg-light">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<h2 class="fw-bold text-primary">Admission Open 2026-27</h2>
-
-<p>Enroll your child today and give them the best start.</p>
-
-</div>
-
-<div class="row">
-
-<div class="col-lg-6">
-
-<form>
-
-<div class="mb-3">
-<label class="form-label">Student Name</label>
-<input type="text" class="form-control" placeholder="Enter Student Name">
-</div>
-
-<div class="mb-3">
-<label class="form-label">Parent Name</label>
-<input type="text" class="form-control" placeholder="Enter Parent Name">
-</div>
-
-<div class="mb-3">
-<label class="form-label">Phone Number</label>
-<input type="tel" class="form-control" placeholder="9876543210">
-</div>
-
-<div class="mb-3">
-<label class="form-label">Email</label>
-<input type="email" class="form-control" placeholder="example@gmail.com">
-</div>
-
-<div class="mb-3">
-<label class="form-label">Program</label>
-
-<select class="form-select">
-
-<option>Play Group</option>
-
-<option>Nursery</option>
-
-<option>LKG</option>
-
-<option>UKG</option>
-
-</select>
-
-</div>
-
-<button class="btn btn-primary w-100">
-Apply Now
-</button>
-
-</form>
-
-</div>
-
-<div class="col-lg-6 d-flex justify-content-center align-items-center">
-
-    <img src="images/classroom.jpg"
-         class="rounded shadow admission-img"
-         alt="Admission">
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
 
 
 
@@ -805,59 +734,115 @@ Very caring staff."
 </section>
 <!-- Admission Form -->
 
+<!-- Admission Section -->
+
+<!-- Admission Section -->
 <section id="admission" class="py-5 bg-light">
 
 <div class="container">
 
-<h2 class="text-center mb-5">Admission Form</h2>
-
-<div class="row justify-content-center">
-
-<div class="col-lg-8">
-
-<form class="shadow p-4 bg-white rounded">
-
-<div class="row">
-
-<div class="col-md-6 mb-3">
-<input type="text" class="form-control" placeholder="Child Name" required>
+<div class="text-center mb-5">
+<h2 class="fw-bold text-primary">Admission Open 2026 - 2027</h2>
+<p class="lead">Enroll your child today and give them the best start for a bright future.</p>
 </div>
 
-<div class="col-md-6 mb-3">
-<input type="number" class="form-control" placeholder="Age" required>
-</div>
+<div class="row align-items-center">
+
+<!-- Admission Form -->
+<div class="col-lg-6">
+
+    <div class="card shadow border-0 p-4">
+
+        <h3 class="text-center mb-4 text-primary">
+            Apply for Admission
+        </h3>
+
+        <form id="admissionForm">
+
+            <div class="mb-3">
+                <label class="form-label">Student Name</label>
+                <input type="text" id="studentName" class="form-control"
+                    placeholder="Enter Student Name" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Parent Name</label>
+                <input type="text" id="parentName" class="form-control"
+                    placeholder="Enter Parent Name" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-control"
+                    placeholder="9876543210" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control"
+                    placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Program</label>
+
+                <select id="program" class="form-select" required>
+                    <option value="" selected disabled>Select Program</option>
+                    <option value="Play Group">Play Group</option>
+                    <option value="Nursery">Nursery</option>
+                    <option value="LKG">LKG</option>
+                    <option value="UKG">UKG</option>
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4"
+                    placeholder="Any Special Requirements"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="bi bi-send-fill"></i>
+                Apply Now
+            </button>
+
+        </form>
+
+    </div>
 
 </div>
 
-<div class="mb-3">
-<input type="text" class="form-control" placeholder="Parent Name">
-</div>
+<div class="col-lg-6 d-flex justify-content-center align-items-center">
 
-<div class="mb-3">
-<input type="email" class="form-control" placeholder="Email">
-</div>
-
-<div class="mb-3">
-<input type="tel" class="form-control" placeholder="Phone Number">
-</div>
-
-<div class="mb-3">
-<textarea class="form-control" rows="4" placeholder="Address"></textarea>
-</div>
-
-<button class="btn btn-success w-100">
-Submit Admission
-</button>
-
-</form>
+    <img src="images/classroom.jpg"
+         class="rounded shadow admission-img"
+         alt="Admission">
 
 </div>
 
-</div>
+<!-- Admission Image -->
 
-</div>
 
-</section>
+<script>
+document.getElementById("admissionForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  fetch("https://script.google.com/macros/s/AKfycbxIKmhtRwTVeG-3Y02FDtW3raPbQJ56LXo8ld8NZV9APDQ73cNvB7TS-LHxk6_XrakVfg/exec", {
+    method: "POST",
+    body: JSON.stringify({
+      child: document.getElementById("child").value,
+      parent: document.getElementById("parent").value,
+      age: document.getElementById("age").value,
+      phone: document.getElementById("phone").value
+    })
+  });
+
+  alert("Admission Submitted Successfully 👍");
+
+  document.getElementById("admissionForm").reset();
+});
+</script>
 <!-- CONTACT SECTION -->
 
 <section class="py-5" id="contact">
