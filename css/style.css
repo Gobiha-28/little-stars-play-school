@@ -379,25 +379,33 @@ z-index:999;
 .login-section .btn-primary{
     border-radius:30px;
 }
-.navbar a {
-  color: black !important;
-}
-.navbar a {
-  color: black !important;
-  font-weight: 600;
+.navbar {
+  background-color: white;
+  padding: 10px 15px;
 }
 
-.navbar a:hover {
-  color: green !important;
+.navbar a {
+  color: black !important;
+  text-decoration: none;
+  font-weight: 500;
 }
+
 .navbar-brand {
   color: black !important;
   font-weight: 700;
 }
-.navbar .navbar-brand {
-  color: black !important;
+
+body {
+  margin: 0;
 }
-a.navbar-brand { color: black !important; }
-.navbar * {
+.navbar-brand {
   color: black !important;
+  font-weight: 700;
+  display: inline-block;
+}
+.navbar .navbar-brand span {
+  color: black !important;
+  display: inline !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
