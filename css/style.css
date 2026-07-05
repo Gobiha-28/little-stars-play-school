@@ -379,3 +379,14 @@ z-index:999;
 .login-section .btn-primary{
     border-radius:30px;
 }
+.navbar a {
+  color: black !important;
+}
+.navbar a {
+  color: black !important;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: green !important;
+}
