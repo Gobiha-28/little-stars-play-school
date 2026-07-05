@@ -390,3 +390,11 @@ z-index:999;
 .navbar a:hover {
   color: green !important;
 }
+.navbar-brand {
+  color: black !important;
+  font-weight: 700;
+}
+.navbar .navbar-brand {
+  color: black !important;
+}
+a.navbar-brand { color: black !important; }
