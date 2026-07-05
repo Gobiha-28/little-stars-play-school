@@ -398,3 +398,6 @@ z-index:999;
   color: black !important;
 }
 a.navbar-brand { color: black !important; }
+.navbar * {
+  color: black !important;
+}
